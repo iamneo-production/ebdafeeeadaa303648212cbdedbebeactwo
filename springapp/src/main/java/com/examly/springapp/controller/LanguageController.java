@@ -34,10 +34,10 @@ public class LanguageController {
         return api.getone(languageId);
     }
 
-    @PutMapping("/{languageId}")
-    public Language update(@PathVariable int languageId , @RequestBody Language language){
-        return api.update(language, languageId);
-    }
+    // @PutMapping("/{languageId}")
+    // public Language update(@PathVariable int languageId , @RequestBody Language language){
+    //     return api.update(language, languageId);
+    // }
 
     @DeleteMapping("/{languageId}")
     public boolean delete(@PathVariable int languageId){
